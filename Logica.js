@@ -33,14 +33,14 @@ const encontrarDuplicados = (numeros) => {
     for (let i = 0; i < numeros.length; i++) {
         const num = numeros[i];
         
-        // Si ya vi este número antes
+        // Si ya vi este numero antes
         if (yaVistos.includes(num)) {
-            // Y todavía no lo agregué a la lista de repetidos
+            // Y todavia no lo agregue a la lista de repetidos
             if (!repetidos.includes(num)) {
                 repetidos.push(num);
             }
         } else {
-            // Primera vez que veo este número
+            // Primera vez que veo este numero
             yaVistos.push(num);
         }
     }
